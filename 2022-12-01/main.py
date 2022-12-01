@@ -17,7 +17,4 @@ totals.sort()
 print(totals[-1])
 
 # Most top three 
-total_top_three = 0
-for pos in totals[-3:]:
-    total_top_three += pos
-print(total_top_three)
+print(sum(totals[-3:]))
