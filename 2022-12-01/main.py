@@ -16,5 +16,5 @@ totals.sort()
 # Most
 print(totals[-1])
 
-# Most top three 
+# Combined top 3
 print(sum(totals[-3:]))
