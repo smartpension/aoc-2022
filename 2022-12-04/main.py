@@ -21,4 +21,3 @@ for pair in input_values:
 
 print(count)
 print(any_count)
-

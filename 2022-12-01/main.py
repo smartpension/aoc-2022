@@ -1,7 +1,7 @@
 with open("input.txt") as input_file:
     input_values = input_file.read()
 
-elves = input_values.replace("\n",",").split(",,")[:-1]
+elves = input_values.replace("\n", ",").split(",,")[:-1]
 
 totals = []
 for elf in elves:

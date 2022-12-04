@@ -15,7 +15,9 @@ for backpack in input_values:
         same_chars_all.append(char)
 
 total_val = 0
-characters = list("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ")
+characters = list(map(chr, range(ord("a"), ord("z") + 1))) + list(
+    map(chr, range(ord("A"), ord("Z") + 1))
+)
 
 for letter in same_chars_all:
     value = characters.index(letter) + 1
