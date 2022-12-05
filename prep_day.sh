@@ -22,7 +22,7 @@ mkdir ${folder_prefix}${date}
 # Download input.txt
 curl -s --cookie "session=$AOC_SESSION" https://adventofcode.com/2022/day/$date/input > ${folder_prefix}${date}/input.txt
 # Create base files
-echo "with open("input.txt") as input_file:
+echo 'with open("input.txt") as input_file:
     input_values = input_file.read().splitlines()
-" > ${folder_prefix}${date}/part1.py
+' > ${folder_prefix}${date}/part1.py
 cp ${folder_prefix}${date}/part1.py ${folder_prefix}${date}/part2.py 
